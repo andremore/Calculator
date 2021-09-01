@@ -1,13 +1,43 @@
-const numberOne = document.querySelector("button[value='1']");
-const numberTwo = document.querySelector("button[value='2']");
+// Numbers
+const numOne = document.querySelector("button[value='1']");
+const numTwo = document.querySelector("button[value='2']");
 
-let conta = document.querySelector('#conta');
-conta.innerText = '';
+let numbers = new Object();
 
-numberOne.addEventListener('click', function () {
-    conta.innerText = numberOne.value;
-});
+numbers = [
+    {
+        value: 1,
+        local: numOne,
+    },
+    {
+        value: 2,
+        local: numTwo,
+    },
+];
 
-numberTwo.addEventListener('click', function () {
-    conta.innerText = numberTwo.value;
-});
+// Operands
+const plusOp = document.querySelector("button[value='+']");
+const minusOp = document.querySelector("button[value='-']");
+const equalOp = document.querySelector("button[value='=']");
+
+let operands = new Object();
+
+operands = [
+    {
+        name: 'plus',
+        value: '+',
+        local: plusOp,
+    },
+    {
+        name: 'minus',
+        value: '-',
+        local: minusOp,
+    },
+    {
+        name: 'equal',
+        value: '=',
+        local: equalOp,
+    },
+];
+
+console.log();

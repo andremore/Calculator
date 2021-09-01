@@ -8,22 +8,20 @@
         <script src="./js/calculator.js" defer></script>
         <title>Document</title>
     </head>
-    <body>
-        <main
-            style="
-                width: 300px;
-                height: 400px;
-                margin-left: auto;
-                margin-right: auto;
-            "
-        >
+    <body
+        style="
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        "
+    >
+        <main style="margin-left: auto; margin-right: auto">
             <header
                 style="
                     width: 100%;
-                    background-color: blueviolet;
+                    background-color: gray;
                     height: 125px;
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(1, 1fr);
                     grid-template-rows: auto;
                 "
             >
@@ -33,21 +31,27 @@
                         font-size: 24px;
                         grid-column-start: 1;
                         grid-column-end: 3;
-                        text-align: end;
-                        align-self: end;
+                        text-align: start;
+                        align-self: start;
+                        margin-left: 10%;
+                        margin-top: 5%;
                     "
                     id="conta"
-                    >Conta</span
-                >
-                <span
-                    style="
-                        grid-column-start: 3;
-                        text-align: end;
-                        align-self: end;
-                        font-size: 24px;
-                    "
-                    id="result"
                 ></span>
+                <span
+                    id="result"
+                    style="
+                        color: whitesmoke;
+                        font-size: 32px;
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                        text-align: end;
+                        align-self: start;
+                        margin-right: 10%;
+                        margin-bottom: 5%;
+                    "
+                    >Result</span
+                >
             </header>
             <section
                 style="
@@ -67,7 +71,7 @@
                 <button class="numbers">7</button>
                 <button class="numbers">8</button>
                 <button class="numbers">9</button>
-                <button class="operations">+</button>
+                <button class="operations" value="+">+</button>
                 <!-- 3rd Line -->
                 <button class="numbers">4</button>
                 <button class="numbers">5</button>
